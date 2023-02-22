@@ -4,51 +4,51 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Recently Diagnosed Podcast: Coming Soon</title>
-	<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+	<title>Recently Diagnosed? A New Podcast from Health Monitor</title>
+	<meta name="description" content="In our free 5 episode podcast, you'll hear from leading physicians, researchers, and patient advocates specializing in HER2+ breast cancer. They'll share their expertise and personal experiences, covering treatment options, clinical trials, lifestyle changes, and provide emotional support." />
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content=Health Monitor Presents: Recently Diagnosed? What to Expect Podcast>
+	<meta property="og:site_name" content="Recently Diagnosed? A New Podcast from Health Monitor">
+	<meta property="og:url" content="https://www.recentlydiagnosedpod.com/">
+	<meta property="og:description" content="In our free 5 episode podcast, you'll hear from leading physicians, researchers, and patient advocates specializing in HER2+ breast cancer. They'll share their expertise and personal experiences, covering treatment options, clinical trials, lifestyle changes, and provide emotional support.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://www.recentlydiagnosedpod.com/social-share.jpg">
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 	<style>
-		*, *::before, *::after {
-		  box-sizing: border-box;
-		}
-		* {
-		  margin: 0;
-		}
-		html, body {
-		  height: 100%;
-		}
-		body {
-		  line-height: 1.5;
-		  -webkit-font-smoothing: antialiased;
-		}
-		img, picture, video, canvas, svg {
-		  display: block;
-		  max-width: 100%;
-		}
-		input, button, textarea, select {
-		  font: inherit;
-		}
-		p, h1, h2, h3, h4, h5, h6 {
-		  overflow-wrap: break-word;
-		}
-		#root, #__next {
-		  isolation: isolate;
-		}
-		html, body { background-color: #FFF;  }
-		.rd_wrapper { display:grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
-		.rd_left_wrapper { display: flex; justify-content: flex-end; padding: 2.75rem 3rem 2rem 3rem;}
+		*, *::before, *::after { box-sizing: border-box; }
+		* { margin: 0; }
+		html, body { height: 100%; }
+		body { line-height: 1.5; -webkit-font-smoothing: antialiased; }
+		img, picture, video, canvas, svg { display: block; max-width: 100%; }
+		input, button, textarea, select { font: inherit; }
+		p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+		#root, #__next { isolation: isolate; }
+		html, body { background-color: #FFF; }
+		.rd_wrapper { display:grid; grid-template-columns: 1fr 1fr; align-items: stretch; height: 100vh; }
+		.rd_left_wrapper { display: flex; justify-content: flex-end; padding: 2.75rem 3rem 2rem 3rem; align-items: center; }
 		.rd_left_content { max-width: 35.375rem; }
-		.rdleft_header { display:flex; justify-content: space-between; }
+		.rdleft_header { display:flex; justify-content: space-between; margin-bottom: -1rem; }
+		.rdlh_logo p { text-align: center; margin:1rem 0 0; }
 		.hmlogo { width: 100%; max-width: 15.4375rem; }
 		.burst { width: 100%; max-width: 8.375rem; }
 		h1, h2, h3 { font-family: 'DM Serif Display', serif; }
 		h1 { font-size: clamp(3.5rem, 1.8491rem + 5.0314vw, 6rem); letter-spacing: -2px; line-height: 0.85; font-weight: 400; color: #2F383C; }
-		h2 { font-size: clamp(3rem, 1.8443rem + 3.522vw, 4.75rem); letter-spacing: -2px; line-height: 1.1; font-weight: 400; color: #F9AAA5; margin-top: 1rem; margin-bottom: 2rem; }
+		h2 { font-size: clamp(3rem, 1.8443rem + 3.522vw, 4.75rem); letter-spacing: -2px; line-height: 0.85; font-weight: 400; color: #F9AAA5; margin-top: 1.2rem; margin-bottom: 2rem; }
+		.rd_left_content p { max-width: 28rem; }
 		h3 { font-size: clamp(3rem, 1.8443rem + 3.522vw, 4.75rem); letter-spacing: -2px; line-height: 1.1; font-weight: 400; color: #2F383C; margin-top: 1rem; margin-bottom: 2rem; }
 		p { font-family: 'DM Sans', sans-serif; margin-bottom: 1.5rem; color: #2F383C; font-size: 1rem; line-height: 1.25; }
-		p.copyright { margin-top: 3rem; }
+		p.copyright { margin-top: 3rem; font-size: 0.875rem; }
+			p.copyright a { color: #2B383C; text-decoration: underline; } 
 		.rd_right_content { background-image: url('desktop-bg.jpg'); background-size: cover; background-position: bottom center; }
 		.rdr_wrapper { display: flex; flex-direction: column; height: 100%; align-items: flex-start; justify-content: flex-end; padding: 3rem 2rem 3rem 5vw; }
 			.rdr_wrapper p { color: #FFF; font-weight: 700;  }
@@ -56,78 +56,103 @@
 		.platform_link img { width: 100%; max-width: 5.625rem; filter: saturate(0); transition: all 0.3s ease; }
 			.platform_link:hover img,
 			.platform_link:focus img { filter: saturate(1); }
-		/* The Modal (background) */
-		.modal {
-		  display: none; /* Hidden by default */
-		  position: fixed; /* Stay in place */
-		  z-index: 1; /* Sit on top */
-		  padding-top: 100px; /* Location of the box */
-		  left: 0;
-		  top: 0;
-		  width: 100%; /* Full width */
-		  height: 100%; /* Full height */
-		  overflow: auto; /* Enable scroll if needed */
-		  background-color: rgb(0,0,0); /* Fallback color */
-		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			
+		.mobile-top { background-color: #FFF; padding: 1.25rem 1rem 1rem; }
+			.mobile-top p { margin: 0.5rem 0 0; padding-bottom:0; text-align: center; }
+		.mcontent-top {  background-image: url('mobile-bg.png'); background-size: contain; background-position: bottom right; background-repeat: no-repeat; }
+		.mcontent-bottom { padding-bottom:1.25rem; }
+		.mcontent-bottom p { color: #FFF; }
+		.mburst_wrapper { display:flex; justify-content: flex-end; margin: 1.5rem 0 -1.5rem; }
+		.mcontent_wrapper { margin-left:1.25rem; margin-right:1.25rem; }
+		#desktop { display:block; }
+		#mobile { display:none; }
+		@media (max-width:576px) {
+			html, body { background-color:#2B383C; }
+			#desktop { display:none; }
+			#mobile { display:block; }
+			.hmlogo { max-width: 12rem; margin: auto; }
+			.burst { max-width: 5.625rem; text-align: right; }
+			h1 { color: #FFF; }
+			.rdr_wrapper { padding: 3rem 0 2rem; }
+			.platform_container { gap: 0.875rem; }
+			.copyright { font-size: 0.875rem; }
+			.copyright a { color: #FFF; text-decoration: underline; }
 		}
 		
-		/* Modal Content */
-		.modal-content {
-		  background-color: #fefefe;
-		  margin: auto;
-		  padding: 20px;
-		  border: 1px solid #888;
-		  width: 80%;
-		}
 		
-		/* The Close Button */
-		.close {
-		  color: #aaaaaa;
-		  float: right;
-		  font-size: 28px;
-		  font-weight: bold;
-		}
-		
+		.modal { display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); }
+		.modal-content { background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; }
+		.close { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; }
 		.close:hover,
-		.close:focus {
-		  color: #000;
-		  text-decoration: none;
-		  cursor: pointer;
-		}
+		.close:focus { color: #000; text-decoration: none; cursor: pointer; }
 	</style>
   </head>
   <body>
 	<main>
-		<div class="rd_wrapper">
-			<div class="rd_left_wrapper">
-				<div class="rd_left_content">
-					<div class="rdleft_header">
-						<div class="rdlh_logo">
-							<img src="health-monitor-logo.svg" alt="Health Monitor logo" class="hmlogo" />
-							<p>Presents:</p>
+		<section id="desktop">
+			<div class="rd_wrapper">
+				<div class="rd_left_wrapper">
+					<div class="rd_left_content">
+						<div class="rdleft_header">
+							<div class="rdlh_logo">
+								<img src="health-monitor-logo.svg" alt="Health Monitor logo" class="hmlogo" />
+								<p>Presents:</p>
+							</div>
+							<img src="burst.svg" alt="New Podcast Announcement" class="burst" />
 						</div>
+						<h1>Recently Diagnosed?</h1>
+						<h2>What to Expect</h2>
+						<p>If you're facing early-stage HER2+ breast cancer, you have questions—and they're probably not all getting answered during a regular office visit.</p>
+						<p>That's why we asked the top experts in the field to bring you the insight, encouragement, and everyday wisdom that can help inform your decisions, big and small, in our FREE five-episode podcast.</p>
+						<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> &nbsp;|&nbsp; Copyright <script>document.write(new Date().getFullYear())</script></p>
+					</div>
+				</div>
+				<div class="rd_right_content">
+					<div class="rdr_wrapper">
+						<p>Available Everywhere!</p>
+						<div class="platform_container">
+							<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow"><img src="apple.svg" alt="Apple Podcasts" /></a>
+							<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow"><img src="spotify.svg" alt="Spotify Podcasts" /></a>
+							<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="amazon.svg" alt="Amazon Podcasts" /></a>
+							<a href="https://www.stitcher.com/show/recently-diagnosed--what-to-expect--with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="stitcher.svg" alt="Stitcher Podcasts" /></a>
+							<a href="https://tunein.com/podcasts/Health--Wellness-Podcasts/Recently-Diagnosed-What-To-Expect-with-Health-Mo-p3496760/" target="_blank" class="platform_link" rel="noopener nofollow"><img src="tunein.svg" alt="TuneIn Podcasts" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="mobile">
+			<div class="mobile-top">
+				<img src="health-monitor-logo.svg" alt="Health Monitor logo" class="hmlogo" />
+				<p>Presents:</p>
+			</div>
+			<div class="mcontent-top">
+				<div class="mcontent_wrapper">
+					<div class="mburst_wrapper">
 						<img src="burst.svg" alt="New Podcast Announcement" class="burst" />
 					</div>
 					<h1>Recently Diagnosed?</h1>
-					<h2>What to Expect</h2>
-					<p>If you're facing early-stage HER2+ breast cancer, you have questions—and they're probably not all getting answered during a regular office visit.</p>
-					<p>That's why we asked the top experts in the field to bring you the insight, encouragement, and everyday wisdom that can help inform your decisions, big and small, in our FREE five-episode podcast.</p>
-					<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> &nbsp;|&nbsp; Copyright <script>document.write(new Date().getFullYear())</script></p>
-				</div>
-			</div>
-			<div class="rd_right_content">
-				<div class="rdr_wrapper">
-					<p>Available Everywhere!</p>
-					<div class="platform_container">
-						<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow"><img src="apple.svg" alt="Apple Podcasts" /></a>
-						<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow"><img src="spotify.svg" alt="Spotify Podcasts" /></a>
-						<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="amazon.svg" alt="Amazon Podcasts" /></a>
-						<a href="https://www.stitcher.com/show/recently-diagnosed--what-to-expect--with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="stitcher.svg" alt="Stitcher Podcasts" /></a>
-						<a href="https://tunein.com/podcasts/Health--Wellness-Podcasts/Recently-Diagnosed-What-To-Expect-with-Health-Mo-p3496760/" target="_blank" class="platform_link" rel="noopener nofollow"><img src="tunein.svg" alt="TuneIn Podcasts" /></a>
+					<h2>What to<br>Expect</h2>
+					<div class="rdr_wrapper">
+						<p>Available Everywhere!</p>
+						<div class="platform_container">
+							<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow"><img src="apple.svg" alt="Apple Podcasts" /></a>
+							<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow"><img src="spotify.svg" alt="Spotify Podcasts" /></a>
+							<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="amazon.svg" alt="Amazon Podcasts" /></a>
+							<a href="https://www.stitcher.com/show/recently-diagnosed--what-to-expect--with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="stitcher.svg" alt="Stitcher Podcasts" /></a>
+							<a href="https://tunein.com/podcasts/Health--Wellness-Podcasts/Recently-Diagnosed-What-To-Expect-with-Health-Mo-p3496760/" target="_blank" class="platform_link" rel="noopener nofollow"><img src="tunein.svg" alt="TuneIn Podcasts" /></a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="mcontent-bottom">
+				<div class="mcontent_wrapper">
+					<p>If you're facing early-stage HER2+ breast cancer, you have questions—and they're probably not all getting answered during a regular office visit.</p>
+					<p>That's why we asked the top experts in the field to bring you the insight, encouragement, and everyday wisdom that can help inform your decisions, big and small, in our FREE five-episode podcast.</p>
+					<p class="copyright"><a href="#" id="myBtnmobile">Terms &amp; Conditions</a> &nbsp;|&nbsp; Copyright <script>document.write(new Date().getFullYear())</script></p>
+				</div>
+			</div>
+		</section>
 	</main>
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
@@ -146,30 +171,17 @@
 	
 	</div>
 	<script>
-	// Get the modal
 	var modal = document.getElementById("myModal");
-	
-	// Get the button that opens the modal
 	var btn = document.getElementById("myBtn");
-	
-	// Get the <span> element that closes the modal
+	var mbtn = document.getElementById("myBtnmobile");
 	var span = document.getElementsByClassName("close")[0];
-	
-	// When the user clicks the button, open the modal 
 	btn.onclick = function() {
 	  modal.style.display = "block";
 	}
-	
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	  modal.style.display = "none";
-	}
-	
-	// When the user clicks anywhere outside of the modal, close it
+	mbtn.onclick = function() { modal.style.display = "block"; }
+	span.onclick = function() { modal.style.display = "none"; }
 	window.onclick = function(event) {
-	  if (event.target == modal) {
-		modal.style.display = "none";
-	  }
+	  if (event.target == modal) { modal.style.display = "none"; }
 	}
 	</script>
   </body>
