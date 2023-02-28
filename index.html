@@ -53,8 +53,13 @@
 		h1, h2, h3 { font-family: 'DM Serif Display', serif; }
 		h1 { font-size: clamp(3.5rem, 1.8491rem + 5.0314vw, 6rem); letter-spacing: -2px; line-height: 0.85; font-weight: 400; color: #2F383C; }
 		h2 { font-size: clamp(3rem, 1.8443rem + 3.522vw, 4.75rem); letter-spacing: -2px; line-height: 0.85; font-weight: 400; color: #F9AAA5; margin-top: 1.2rem; margin-bottom: 2rem; }
+		
+		.modal-content h2 { color: #2F383C; }
+		.modal-content li { font-family: 'DM Sans', sans-serif; }
+		
 		.rd_left_content p { max-width: 28rem; }
 		h3 { font-size: clamp(3rem, 1.8443rem + 3.522vw, 4.75rem); letter-spacing: -2px; line-height: 1.1; font-weight: 400; color: #2F383C; margin-top: 1rem; margin-bottom: 2rem; }
+		.modal-content h3 { font-size: clamp(1.5rem, 1.0047rem + 1.5094vw, 2.25rem); margin-bottom: 0.8725rem; letter-spacing: 0; }
 		p { font-family: 'DM Sans', sans-serif; margin-bottom: 1.5rem; color: #2F383C; font-size: 1rem; line-height: 1.25; }
 		p.copyright { margin-top: 3rem; font-size: 0.875rem; }
 			p.copyright a { color: #2B383C; text-decoration: underline; } 
@@ -75,6 +80,9 @@
 		.mcontent_wrapper { margin-left:1.25rem; margin-right:1.25rem; }
 		#desktop { display:block; }
 		#mobile { display:none; }
+		#myBtnmobile { color: #FFF; text-decoration: underline; }
+			#myBtnmobile:hover,
+			#myBtnmobile:focus { text-decoration: none; }
 		@media (max-width:576px) {
 			html, body { background-color:#2B383C; }
 			#desktop { display:none; }
@@ -114,7 +122,7 @@
 						<p>If you're facing early-stage HER2+ breast cancer, you have questions—and they're probably not all getting answered during a regular office visit.</p>
 						<p>That's why we asked the top experts in the field to bring you the insight, encouragement, and everyday wisdom that can help inform your decisions, big and small, in our FREE five-episode podcast.</p>			
 
-						<p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
+						<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> &nbsp;|&nbsp; &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 					</div>
 				</div>
 				<div class="rd_right_content">
@@ -159,7 +167,7 @@
 				<div class="mcontent_wrapper">
 					<p>If you're facing early-stage HER2+ breast cancer, you have questions—and they're probably not all getting answered during a regular office visit.</p>
 					<p>That's why we asked the top experts in the field to bring you the insight, encouragement, and everyday wisdom that can help inform your decisions, big and small, in our FREE five-episode podcast.</p>
-					<p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
+					<p class="copyright"><a href="#" id="myBtnmobile">Terms &amp; Conditions</a> &nbsp;|&nbsp; &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 				</div>
 			</div>
 		</section>
@@ -170,13 +178,70 @@
 	  <!-- Modal content -->
 	  <div class="modal-content">
 		<span class="close">&times;</span>
-		<h3>Terms &amp; Conditions</h3>
-		<p><em>Last Updated Feb. 22, 2023</em></p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo urna, vestibulum non eros ac, condimentum suscipit lacus. Phasellus euismod eros diam, nec bibendum urna consequat nec. Ut vulputate metus in sapien porta, eu finibus massa euismod. Aliquam a ipsum tristique, maximus nunc a, lobortis magna. Sed id eleifend risus. Aenean in fermentum augue. Aliquam elementum magna vitae nisi porttitor vulputate. Pellentesque commodo justo tellus, ac rhoncus tortor laoreet at.</p>
-		<p>Vestibulum at metus pharetra, porttitor ante nec, iaculis ex. Donec laoreet laoreet dapibus. Nunc porta orci id vulputate iaculis. Vestibulum feugiat quam et sodales consequat. Mauris sit amet orci ut neque luctus aliquam et nec mi. In augue nulla, facilisis quis varius et, scelerisque nec erat. Ut gravida eros vitae erat accumsan, a vestibulum augue dictum. Vestibulum aliquet sodales quam eu imperdiet. Nunc vitae libero dictum, volutpat mauris in, finibus quam. Fusce dapibus massa malesuada lacus lacinia semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-		<p>Mauris nec sodales tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tellus neque, euismod accumsan aliquam semper, eleifend nec nulla. Cras dui turpis, facilisis nec ante at, dictum molestie massa. Vestibulum posuere consequat risus, nec varius nunc pretium lacinia. Curabitur sagittis gravida tincidunt. Sed vitae interdum ligula. Nulla dapibus nisl vel tortor volutpat faucibus. Maecenas tempor erat eros, eget euismod purus ultrices eu. Fusce tristique, ipsum nec venenatis venenatis, ligula nisl accumsan lorem, quis interdum velit libero nec magna. Ut tincidunt, mi a cursus vestibulum, nibh odio convallis sapien, aliquam vulputate massa nibh volutpat magna. Aliquam auctor quam aliquam nisl lacinia hendrerit. Nam aliquet vitae nunc vitae ultricies. Nulla sodales interdum ex sed aliquam. Nulla malesuada hendrerit arcu, sed tristique lorem finibus eu.</p>
-		<p>Etiam lorem urna, ultricies ut fermentum quis, hendrerit in massa. Maecenas sagittis eget libero vel pellentesque. Donec cursus neque lacus, ut lobortis odio rutrum eget. Integer fermentum varius mauris vitae cursus. Nullam finibus cursus libero vitae feugiat. Nam id dolor at orci pretium varius. Duis quis justo tempor, ullamcorper leo eget, dignissim felis. Fusce vel odio hendrerit, pellentesque libero quis, laoreet felis. Praesent ut mi dui. Morbi quis dolor feugiat, auctor libero id, tempus sapien. Aenean eu elit justo. Aliquam ac interdum arcu. Sed eget imperdiet lacus, at congue nibh. Donec a fermentum sem, ut fringilla est. Praesent pulvinar enim vitae imperdiet aliquet.</p>
-		<p>Curabitur condimentum orci quis leo tincidunt condimentum. Donec sed libero eu eros convallis scelerisque sit amet nec magna. Sed pretium iaculis felis eu viverra. Etiam auctor condimentum arcu. Aenean ac volutpat mi, vel interdum dui. In hac habitasse platea dictumst. Vestibulum accumsan sollicitudin malesuada. Praesent mi ipsum, sollicitudin vel augue ac, vulputate aliquam ligula. Nullam nisi lectus, commodo non metus nec, accumsan pretium sem. Praesent finibus leo vitae orci egestas, at dignissim velit sollicitudin. Nam tellus neque, maximus a dolor sit amet, consequat blandit augue. Morbi fringilla quis elit quis ultricies. Vivamus feugiat porttitor porta. Vivamus consectetur dapibus felis, non suscipit orci fermentum nec. Curabitur quam magna, semper in eros ac, dapibus vehicula est. Nullam ex neque, dignissim ut arcu sollicitudin, cursus fermentum est.</p>
+		<h2>Terms &amp; Conditions</h2>
+		<p><em>Last Updated Feb. 28, 2023</em></p>
+		
+		<p>By streaming or downloading materials from any podcast we make available on our site located at www.recentlydiagnosedpod.com or through any authorized third-party distributor ("Podcast," such Podcast hereafter being referred to, collectively with any website, mobile application or other technology or content provided by us, as our "Services"), you agree to abide by the terms below ("Terms and Conditions") between you and Data Centrum Communications, Inc. d/b/a Health Monitor Network ("we or "us"). If you do not agree to abide by these Terms and Conditions, do not stream or download our Podcasts or otherwise use or access our Services. By streaming or downloading any Podcast, you agree to the terms of this agreement, which will be binding on you.</p>
+		<h3>1. Changes to the Terms and Conditions</h3>
+		<p>We may modify or amend the Terms and Conditions at any time at our sole discretion with no prior notification to you. You are solely responsible for checking the Terms and Conditions from time to time to determine if any amendment(s) or modification(s) have been made. Your continued use of the Services shall be deemed to represent your acceptance of the Terms and Conditions that are then in effect.</p>
+		<h3>2. Liability</h3>
+		<p>2.1 No part of the provision of the Services shall be deemed to be, nor is it intended to be, nor should it be taken to be, the provision of medical advice or the practice of medicine.</p>
+		<p>2.2 Although Health Monitor Network aims to provide the Services to the highest standards of the industry, neither it, nor any host or guest on any Podcast accept any liability for any inaccuracy or misleading information provided in the Podcast or any reliance by Client on any such information.</p>
+		<p>2.3 Except to the extent that they are expressly set out in these terms and conditions, no conditions, warranties or other terms shall apply to the Services. No implied conditions, warranties or other terms apply (including any implied terms as to satisfactory quality, fitness for purpose or conformance with description).</p>
+		<p>2.4 Subject to below, Health Monitor Network's total liability arising from or in connection with these terms and conditions and in relation to anything which we may have done or not done in connection with these terms and conditions and the delivery of the Service (and whether the liability arises because of breach of contract, negligence or for any other reason) shall be limited to $100.</p>
+		<p>2.5 Notwithstanding the above, nothing in this Agreement shall exclude or limit Health Monitor Network’s liability for (i) death or personal injury caused by negligence or (ii) fraudulent misrepresentation.</p>
+		<p>2.6 No claim may be brought more than six months after the last date on which the Services concerned have finished or ceased to be provided by us.</p>
+		<p>2.7  NOTWITHSTANDING THE GENERALITY OF THE FOREGOING, THE SITE, PODCAST AND SERVICES ARE PROVIDED ON AN "AS IS," "AS AVAILABLE," "WITH ALL FAULTS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. WE MAKE NO REPRESENTATION OR WARRANTY (A) THAT THE SITE AND SERVICES WILL BE AVAILABLE ON A TIMELY BASIS, OR THAT ACCESS TO THE SITE WILL BE UNINTERRUPTED, ERROR FREE OR SECURE, OR THAT THE SITE WILL BE AVAILABLE OR OPERABLE FOR ANY PERIOD OF TIME; (B) THAT DEFECTS OR ERRORS WILL BE CORRECTED; OR (C) THAT THE SITE OR THE SERVERS OR NETWORKS THROUGH WHICH THE SITE ARE MADE AVAILABLE ARE SECURE OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.  WE RESERVE THE RIGHT, IN OUR SOLE DISCRETION, TO CORRECT ANY ERROR OR OMISSION ON THE SITE OR IN ITS CONTENT. APPLICABLE LAW MAY NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU.</p>
+		<h3>3.  Intellectual Property and Authorized Use</h3>
+		<p>3.1 All Intellectual Property Rights in the Podcast, the Services, and all content made available in connection therewith, are, and remain, the intellectual property of us or our licensors. Collectively, this intellectual property is hereafter referred to as "Health Monitor I.P."</p>
+		<p>3.2 You are not authorized to:-</p>
+		<ol style="list-style-type: lower-roman;">
+			<li>copy, modify, reproduce, re-publish, sub-license, sell, upload, broadcast, post, transmit or distribute any of the Health Monitor I.P. without prior written permission;</li>
+			<li>record in video or audio form, or relay or transmit by phone or other means the Health Monitor I.P.</li>
+			<li>use the Health Monitor I.P. for any commercial or political purpose;</li>
+			<li>remove any copyright or other notice of Health Monitor Network on the Health Monitor I.P.;</li>
+			<li>modify, adapt, merge, translate, disassemble, decompile, reverse engineer (save to the extent permitted by law) any software forming part of the Health Monitor I.P..</li>
+			<li>By accessing the Podcast, You agree to:
+				<ul>
+					<li>Use the Podcast in compliance with all applicable laws.</li>
+					<li>Not attempt to circumvent, or encourage anyone else to circumvent, these terms and conditions.</li>
+					<li>Allow us to keep and track data on your use within the Podcast as described in Section 8 below.</li>
+				</ul>
+			</li>
+		</ol>
+		<p>Breach by you of this clause 3.2 shall allow us to immediately terminate these Terms and Conditions with you and cease to provide you with any Services and to recover our legal fees in conjunction with any legal action which we believe to be necessary to prevent your further breach of these Terms and Conditions.</p>
+		<p>3.3  We grant to you a limited, non-transferable, revocable, non-exclusive license to use the Services solely for your personal use on your personal computer, mobile phone or other wireless device. </p>
+		<p>3.4 All rights not expressly granted to you are reserved to us.</p>
+		<h3>4. Confidentiality</h3>
+		<p>4.1 Each party shall keep the other party’s personal, business and financial information disclosed hereunder ("Confidential Information") strictly confidential and not use it otherwise than for the purposes authorized by these terms and conditions, and shall return it on demand and not retain copies of it.</p>
+		<p>4.2 Either party may disclose Confidential Information to its legal and other advisors for the purposes of obtaining advice from them.</p>
+		<p>4.3 This clause shall continue notwithstanding termination of these terms and conditions.</p>
+		<h3>5. Termination</h3>
+		<p>5.1 We shall be entitled to terminate these terms and conditions and cease to provide you with any Services with immediate effect in the event that you are in breach of these terms and conditions.</p>
+		<p>5.2 Our termination, Liability, Intellectual Property, Confidentiality and Restrictions shall continue notwithstanding such termination.</p>
+		<h3>6. Modifications and Interruptions</h3>
+		<p>6.1 We reserve the right to change, modify, or remove the contents of the Podcast at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Podcast. We also reserve the right to modify or discontinue all or part of the Podcast without notice at any time. We will not be liable to you or any third party for any modiﬁcation, suspension, or discontinuance of the Podcast.</p>
+		<p>6.2 We cannot guarantee the Podcast will be available at all times. We may experience hardware, software, or other problems related to the Podcast, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Podcast at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Podcast during any downtime or discontinuance of the Podcast. Nothing in these Terms and Conditions will be construed to obligate us to maintain and support the Podcast or to supply any corrections, updates, or releases in connection therewith.</p>
+		<h3>7. Data Protection</h3>
+		<p>7.1 If you provide certain data to us such as your contact information and demographic information, you agree that we may store this data and use it to contact you, provide you with details of the Services you have accessed and otherwise as required during the normal provision of the Services.</p>
+		<p>7.2 Will not pass any personal data onto anyone outside of Health Monitor Network.</p>
+		<p>7.3 To enable us to monitor and improve our Services, we gather certain aggregated information about you, including details of your operating system, browser version, domain name and IP address, the URL you came from and go to and the parts of the Website you visit.</p>
+		<p>7.4 We use information such as your session identifiers to enable us to identify whether you are using our Services, assist with the provision of Services and to ensure that you have access to relevant Services.</p>		
+		<h3>8. Choice of Law</h3>
+		<p>These Terms and Conditions are governed by the laws of the State of New York, without regard to its conflict of laws rules, and you consent to the exclusive jurisdiction of the state and federal courts located in New York, New York to resolve any dispute concerning or requiring interpretation of these Terms and Conditions.</p>
+		<h3>9. Force Majeure</h3>
+		<p>Health Monitor Network shall not be held accountable or penalized under these terms and conditions arising from causes beyond its reasonable control, including, but not limited to, war, strike, pandemic, natural disaster, or terrorism.</p>
+		<h3>10. Disputes</h3>
+		<p>Any dispute arising under or related to the Terms and Conditions or the alleged breach shall be decided by arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules in effect at the time the arbitration is commenced. The arbitration hearing shall be held in New York State.</p>
+		<h3>11. Entire Agreement</h3>
+		<p>These terms and conditions are the entire agreement between the parties and supersede any prior agreements and arrangements, whether written or oral. You confirm that you have not relied on any representations in entering into these and any other terms and conditions with us. Nothing in this clause or terms and conditions shall limit liability for any fraudulent misrepresentation.</p>
+		<h3>12. Electronic Communications</h3>
+		<p>We may communicate with you in its discretion either via email or by posting notices on the Website. You hereby agree that all notices, disclosures, and other communications we make electronically to you satisfy any legal requirement that such communications be in writing and be delivered to you.</p>
+		<h3>13. Copyright and Trademark</h3>
+		<p>The Health Monitor Network name, logo and all related names, are service marks or copyright of Data Centrum Communications Inc. d/b/a Health Monitor Network They may not be used or displayed without our prior written consent.</p>
+		
+		
+		
 	  </div>
 	
 	</div>
