@@ -99,9 +99,11 @@
 		#desktop { display:block; }
 		#mobile,
 		#banner_mobile { display:none; }
-		#myBtnmobile { color: #FFF; text-decoration: underline; }
+		#myBtnmobile, #privacyPolicyM { color: #FFF; text-decoration: underline; }
 			#myBtnmobile:hover,
-			#myBtnmobile:focus { text-decoration: none; }
+			#privacyPolicyM:hover,
+			#myBtnmobile:focus,
+			#privacyPolicyM:focus { text-decoration: none; }
 		@media (max-width:576px) {
 			html, body { background-color:#1A221E; }
 			#desktop { display:none; }
@@ -122,9 +124,12 @@
 		
 		.modal { display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); }
 		.modal-content { background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; }
-		.close { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; }
+		.marginAdj { margin-bottom: 0.5rem; }
+		.close, .ppclose { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; }
 		.close:hover,
-		.close:focus { color: #000; text-decoration: none; cursor: pointer; }
+		.ppclose:hover,
+		.close:focus,
+		.ppclose:focus { color: #000; text-decoration: none; cursor: pointer; }
 	</style>
   </head>
   <body>
@@ -147,7 +152,7 @@
 						<div class="art19-web-player awp-micro awp-theme-light-gray-blue" data-series-id="0dedacf7-3e54-48ef-83a9-08f58d698b9d" data-pick-from-series="latest"></div>
 						<div><a href="https://us.kisqali.com/metastatic-breast-cancer/patient-support/sign-up" target="_blank" rel="noopener nofollow" title="Sign Up For Novartis Patient Support"><img src="banner.webp" alt="Sign Up For Novartis Patient Support" width="640" height="100" loading="lazy" class="kisqali" /></a></div>		
 
-						<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
+						<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> | <a href="#" id="privacyPolicyD">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 					</div>
 				</div>
 				<div class="rd_right_content">
@@ -205,13 +210,232 @@
 					<p>You have questions&mdash;and they're probably not all getting answered during a regular office visit.</p>
 					<p>That's why we've enlisted top experts to provide insight, encouragement, and everyday wisdom in our FREE five-episode podcast, helping you make informed decisions, big and small.</p>
 					<div class="art19-web-player awp-micro awp-theme-light-gray-blue" data-series-id="0dedacf7-3e54-48ef-83a9-08f58d698b9d" data-pick-from-series="latest"></div>
-					<p class="copyright"><a href="#" id="myBtnmobile">Terms &amp; Conditions</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
+					<p class="copyright"><a href="#" id="myBtnmobile">Terms &amp; Conditions</a> | <a href="#" id="privacyPolicyM">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 				</div>
 			</div>
 		</section>
 	</main>
 	<div id="banner_mobile"><a href="https://us.kisqali.com/metastatic-breast-cancer/patient-support/sign-up" target="_blank" rel="noopener nofollow" title="Sign Up For Novartis Patient Support"><img src="banner.webp" alt="Sign Up For Novartis Patient Support" width="640" height="100" loading="lazy" class="kisqali" /></a></div>
-	<!-- The Modal -->
+	
+	
+	
+	<!-- Privacy Policy Modal -->
+	<div id="privacyPolidyModal" class="modal">
+		<div class="modal-content">
+			<span class="ppclose">&times;</span>
+			<h2>Privacy Policy &amp; Notice</h2>
+			<p><em>Last Updated April 12, 2024</em></p>
+			<p>Data Centrum Communications, Inc. d/b/a Health Monitor Network ("<strong>HM</strong>," "<strong>we</strong>," or "<strong>us</strong>") is the publisher of educational materials for a variety of medical topics. This Privacy Policy &amp; Notice ("Privacy Notice") explains our policy and practices for how we collect, process, store, share, and protect personal information. It also provides you with important information about your personal information choices.</p>
+			<p><strong>By visiting our website, interacting with any of our online materials, or by otherwise providing any personal information to us, you consent to us collecting, processing, storing, and sharing your personal information as described in this Privacy Notice, including the monitoring and recording of your online activities by us and third parties.</strong></p>
+			<h3>Applicability of Privacy Notice</h3>
+			<p>This Privacy Notice applies to personal information we have that identifies, relates to, describes, references, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular individual, household, or device ("<strong>personal information</strong>"). Personal information does not include information publicly available from government records.  Personal information does not include information that is not personal, like anonymous, deidentified, or aggregated data (for example, summary statistics), even if it comes from personal information.</p>
+			<p>This Privacy Notice does not apply to personal information that we collect in connection with employment at HM.</p>
+			<p>This Privacy Notice does not cover the policies or practices of health care providers or third parties you may access or be connected with through HM. We do not have control over and are not responsible for the privacy practices or content of health care providers or third parties, including third-party websites, applications, or services linked to or accessible from our website and online materials. We encourage you to review the privacy policies and terms of each third-party website and application you visit.</p>
+			<h3>How We Collect Personal Information About You</h3>
+			<p class="marginAdj">We collect personal information about you in the following ways:</p>
+			<ul>
+				<li><strong>Directly from you or your representatives</strong>, such as when you register for our services or to receive information from us (including registration through HM representatives, our website, or other contact forms) or when you communicate or interact with us in any way, including in-person, mail, email, phone, chat, QR code, or social media</li>
+				<li><strong>Indirectly from you</strong>, such as cookie data and other information from your device, browser, or activity or interactions with our website and online materials</li>
+				<li><strong>From our third-party vendors</strong>, such as our analytics providers</li>
+				<li><strong>From our corporate customers and partners</strong>, for example, our corporate customers and partners may provide information about individuals associated with them (employees, members)</li>
+				<li><strong>From other third-party sources</strong>, such as trade associations, industry marketing lists, and social media</li>
+			</ul>
+			<h3>What Personal Information We Collect and Disclose</h3>
+			<p class="marginAdj">We collect and share with third parties, for our business purposes, the following categories of personal information:</p>
+			<ul>
+				<li><strong>Contact information</strong>, such as name, postal address, email address, and phone number</li>
+				<li><strong>Professional or employment-related information</strong>, such as past and present employer, title, and professional contact information</li>
+				<li><strong>Characteristics of protected persons</strong>, such as age, date of birth, and gender</li>
+				<li><strong>Commercial information</strong>, such as products or services purchased or considered</li>
+				<li><strong>Financial information</strong> from our customers, including credit card, bank account, and wire transfer information</li> 
+				<li><strong>Internet and device identifiers, activity, and analytics</strong>, such as information we automatically collect through cookies and tracking technologies used on our website and online materials, including user activity, a user’s browser, operating system and device information, IP address, and approximate geolocation</li>
+				<li><strong>Social media information</strong>, such as your connections, posts, comments and other information we obtain through your connections or interactions with our social media accounts and profiles; it also includes details such as profile links, public posts, likes, comments, and connections made through different social media platforms</li>
+				<li><strong>Precise geolocation</strong>, if you enable location sharing with us through your device</li>
+				<li><strong>Complete account access credentials</strong> for your HM account, such as username and password</li>
+				<li><strong>Preference information</strong>, including preferences related to marketing, advertising, privacy, communications, and participation in HM programs</li>
+				<li>Other <strong>information you choose to provide</strong>, like when you submit a customer service query, enter a contest or promotion, or contact us</li>
+				<li><strong>Inferences</strong> drawn from any of the personal information listed above; for example, to create a profile of an individual’s preferences and characteristics</li>
+			</ul>
+			<h3>How We Use Personal Information About You</h3>
+			<p class="marginAdj">We collect, process, store and/or share the personal information we collect for one or more of the following business purposes:</p>
+			<ul>
+				<li>Perform services, including to provide advertising or marketing services, to provide customer service, to verify customer information, and to perform our contractual obligations</li>
+				<li>Develop, customize, and improve products and services</li>
+				<li>Respond to your inquiries and comments and conduct surveys</li>
+				<li>Market and advertise products and services to you, including newsletters, promotions and events, and other marketing communications</li>
+				<li>Analyze and monitor usage, trends, and other activities</li>
+				<li>Deidentify personal information so that it is no longer personal information</li>
+				<li>Prevent and address security and technical issues</li>
+				<li>Support our business operations, including using third-party vendors and service providers to provide information technology and infrastructure services</li>
+				<li>Comply with laws, regulations, and legal process (including to comply with any internal policy based on or reflecting legal or regulatory guidance, codes, or opinions), respond to requests from law enforcement and government authorities, protect or defend our rights or property, or act in urgent circumstances to protect the personal safety of users of our services or the public</li>
+				<li>Evaluate or conduct business changes, including a merger, acquisition, sale, equity or debt financing, bankruptcy or other transaction in which a third party invests in or acquires control of our business or assets (in whole or in part)</li>
+			</ul>
+			<h3>How We Share Personal Information About You</h3>
+			<p class="marginAdj">We may share any of the categories of personal information described in the section <em>What Personal Information We Collect and Disclose</em> with the following categories of third parties for our business purposes:</p>
+			<ul>
+				<li><strong>Vendors and service providers</strong> who provide services to us such as information technology and infrastructure, data analysis, marketing and marketing research activities, attorneys, advisors, auditors, and accountants, and payment processors</li>
+				<li><strong>Parties for legal purposes</strong>, including government authorities, law enforcement, or other persons in order to comply with legal obligations or protect or defend our rights or property</li>
+				<li><strong>Parties for business changes</strong>, for example, your personal information that we collect may be shared with or transferred to a third party if we undergo a merger, acquisition, sale, equity or debt financing, bankruptcy or other transaction in which a third party invests in, finances, or acquires control of our business or assets (in whole or in part)</li>
+				<li><strong>Other third parties</strong> for uses described in this Privacy Notice or for purposes you have requested</li>
+			</ul>
+			<h3>We Do Not Sell or Share Your Personal Information for Targeted Advertising</h3>
+			<p>We do not sell personal information. For purposes of this Privacy Notice, "<strong>sell</strong>" means the disclosure of personal information to a third party in exchange for money or other valuable consideration.</p>
+			<p>We do not share personal information with third parties for cross-context behavioral advertising or targeted advertising.</p>
+			<p>To our knowledge, we do not sell or share for cross-contex behavioral advertising or targeted advertising purposes the personal information of children under the age of 16.</p>
+			<h3>Deidentified and Aggregated Information</h3>
+			<p>Anonymous, deidentified, or aggregated data is not personal information, even if it comes from personal information.  We reserve the right to collect and use such anonymized, deidentified, or aggregated non-personal information for any reason in our sole discretion, including but not limited to performing statistical analysis of such information, or to share such information with third parties.</p>
+			<h3>Deidentified Patient Information</h3>
+			<p>We may disclose deidentified patient information to third parties for our business purposes as described in the sections <em>How We Use Personal Information About You and How We Share Personal Information About You</em>. We do not sell deidentified patient information. To deidentify patient information, we follow the HIPAA safe harbor method.</p>
+			<h3>How We Protect Your Personal Information</h3>
+			<p>We use administrative, technical, contractual, and physical safeguards designed to protect your personal information.</p>
+			<p>Despite our efforts to ensure security, we cannot guarantee or warrant that your personal information will not be accessed, acquired, disclosed for an improper purpose, altered, or destroyed by an unauthorized person or as a result of a breach of our security safeguards or those of our hosting provider or other vendors or service providers.  We cannot ensure the security of any information transmitted to us over the internet. To the fullest extent permitted by applicable law, we accept no liability for any unintentional disclosure of your personal information. Therefore, we urge you to take adequate precautions to protect your personal information as well.</p>
+			<h3>Retention of Personal Information</h3>
+			<p>We retain personal information for such period as is reasonably necessary to achieve the collection and use purposes described in this Privacy Notice. We may maintain your personal information after you have stopped using or interacting with our website and online materials; for example, we may retain your personal information to improve our products and services, for marketing purposes, to comply with legal obligations, or to resolve disputes.</p>
+			<h3>Your Privacy Rights and Choices</h3>
+			<p><em>Notice of Your Personal Information Rights</em></p>
+			<p class="marginAdj">Subject to exemptions and limitations provided by applicable law, if you are an individual, you  have the right to:</p>
+			<ol>
+				<li>Request that we disclose certain information to you about our collection and use of your personal information (the "<strong><em>right to know</em></strong>"):
+					<ul>
+						<li>Whether or not we are processing your personal information</li>
+						<li>The categories of your personal information we have collected</li>
+						<li>The categories of sources from which your personal information was collected</li>
+						<li>Our business purposes for collecting, selling or sharing that personal information</li>
+						<li>The categories of third parties with whom we disclosed your personal information, identifying the personal information categories that each category of recipient obtained and the purposes for sharing your personal information</li>
+						<li>The types of personal information we shared with third parties for third parties’ direct marketing purposes and the identities of such third parties</li>
+						<li>The specific pieces of personal information we collected about you and access to that personal information</li>
+					</ul>
+				</li>
+				<li>Request a copy of the personal information you provided to us in a portable, and, if feasible, readily usable format to be transferred to you or a third party (the "<strong><em>right to data portability</em></strong>")</li>
+				<li>Request that we delete any of your personal information that we collected from you and retained, subject to certain exceptions under applicable privacy law (the "<strong><em>right to delete</em></strong>").</li>
+				<li>Direct us to not sell your personal information at any time (the "<strong><em>right to opt out of sale</em></strong>"). We do not sell personal information, including personal information of minors under the age of 16.</li>
+				<li>Direct us to not share your personal information for cross-context behavioral advertising purposes or targeted advertising (the "<strong><em>right to opt out of targeted advertising</em></strong>"). "<strong><em>Cross-context behavioral advertising</em></strong>" or "<strong><em>targeted advertising</em></strong>" means the advertisement is selected based on personal information obtained from your activities over time and across nonaffiliated websites/applications to predict your preferences or interests. We do not share your personal information for cross-context behavioral advertising or targeted advertising.</li>
+				<li>Direct us to not share your personal information with third parties for third parties’ direct marketing purposes (the "<strong><em>right to opt-out of sharing for third party marketing</em></strong>"). We don’t share personal information with third parties for their marketing purposes.</li>
+				<li>Direct us not to share your personal information for the purposes of profiling in furtherance of decisions that produce legal or similarly significant effects concerning you (the "<strong><em>right to opt out of profiling with legal effects</em></strong>"). We do not share your personal information for the purposes of making automated decisions that produce legal or similarly significant effects concerning you.</li>
+				<li>Limit the use or disclosure of your sensitive personal information to just those actions necessary to perform specific purposes outlined by law (the "<strong><em>right to limit use of sensitive information</em></strong>"). We only use or disclose sensitive personal information for purposes that would continue to be allowable after the receipt of a limitation request, including to provide services and ensure the security and integrity of your account.</li>
+				<li>Correct inaccurate personal information (the "<strong><em>right to correct</em></strong>").</li>
+				<li>Be free from unlawful discrimination for exercising your rights under applicable privacy law.</li>
+			</ol>
+			<h3>How to Exercise Your Personal Information Rights and Choices</h3>
+			<p class="marginAdj">To exercise your rights as described above, please submit a request by either:</p>
+			<ul>
+				<li>Emailing us at customerservice@healthmonitor.com; or</li>
+				<li>Calling us at (800) 422-4112</li>
+			</ul>
+			<p>Please be aware that certain features or functionality of our website, online content, or other services may be unavailable to you if we honor your requests with respect to certain privacy rights (such as rights to delete or limit).</p>
+			<p>We will acknowledge receipt of your request and advise you how long we expect it will take to respond if we are able to verify your identity. We will work to process all verified requests within the timeframe required by applicable law, but no later than 45 days unless we need an extension. If we need an extension for up to an additional 45 days in order to process your request, we will provide you with an explanation for the delay.</p>
+			<p>We will not charge you a fee for making a request unless your request is excessive, repetitive, or manifestly unfounded. If we determine that your request warrants a fee, we will notify you of the fee and explain that decision before completing your request.</p>
+			<p>We may ask for information to verify your identity, such as name, contact information, or date of birth. For a request to opt out of sale or targeted advertising, we do not require a verifiable request. We will only use personal information provided with your request to verify your identity and complete your request. You do not need an account to submit a request.</p>
+			<p class="marginAdj">You may authorize an agent to make a request on your behalf by contacting us at the email or toll-free number listed above. As part of our verification process, we may require, as applicable:</p>
+			<ul>
+				<li>Information to verify the requestor’s identity, such as name, contact information, or date of birth (if the requestor is individual), or the requestor’s active registration with a state or governmental agency (if the requestor is a company or organization)</li>
+				<li>information to verify the identity of the person on whose behalf such request is made, such as name, contact information, or date of birth</li>
+				<li>a document to confirm that the requestor is authorized to make the request, such as a power of attorney; we may require proof of authorization and verification of identity directly from the person on whose behalf the request is made.</li>
+			</ul>
+			<p>In some instances, we may not be able to honor your request. For example, we will not honor your request if we cannot verify your identity or if we cannot verify that you have the authority to make a request on behalf of another individual. Additionally, we will not honor your request where an exception applies, such as where the disclosure of personal information would adversely affect the rights and freedoms of another individual or where your personal information is not subject to applicable privacy law rights.</p>
+			<p>We will advise you in our response if we are not able to honor your request.</p>
+			<p>You have the right to appeal our decision to not honor your request or our refusal to take action on a request within a reasonable period of time by contacting us at the email or toll-free number listed above and clearly stating that the purpose of the contact is an "appeal of privacy rights."   Within 45 days of receipt of an appeal (unless we require an extension), we will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions.</p>
+			<h3>Manage How We Communicate with You</h3>
+			<p class="marginAdj">We offer you choices about how to manage how we communicate with you.</p>
+			<ul>
+				<li><strong>Email</strong>. You may opt out of receiving marketing emails from us at any time by sending an email to customerservice@healthmonitor.com or by clicking on the unsubscribe link in our emails. You will continue to receive service-related emails (e.g. order status).</li>
+				<li><strong>Direct Mail</strong>. To opt out of direct mail marketing, please send your request to customerservice@healthmonitor.com and include your postal address in the body of the email.</li>
+				<li><strong>Telephone Calls/Text Messages</strong>. To opt out of telephone and text message marketing, please send your request to customerservice@healthmonitor.com and include your phone number in the body of the email.</li>
+				<li><strong>Updating Your Profile</strong>. You may update or correct your personal information related to your account through your dashboard of your account or by sending a request to customerservice@healthmonitor.com.</li>
+			</ul>
+			<p>We will respond to your communication preference requests within a reasonable timeframe.</p>
+			<h3>Our Uses of Personal Information in the Last 12 Months</h3>
+			<p class="marginAdj">In the last 12 months, for our business purposes, we have collected and disclosed the following categories of personal information to our vendors and service providers and to parties for legal purposes:</p>
+			<ul>
+				<li>Identifiers (for example, name, postal address, email address, IP address, unique personal identifiers)</li>
+				<li>Personal information (for example, name, address, telephone number, credit card number)</li>
+				<li>Characteristics of protected persons (for example, age and sex/gender)</li>
+				<li>Commercial information (for example, records of products or services purchased or considered)</li>
+				<li>Internet or other electronic network activity (for example, browsing history, search history, website interactions)</li>
+				<li>Geolocation data (for example, device location)</li>
+				<li>Professional or employment-related information</li>
+				<li>Inferences drawn from other personal information to create a consumer profile</li>
+				<li>Other non-sensitive data you chose to provide (even if we do not specifically collect it)</li>
+				<li>Sensitive data
+					<ul>
+						<li>Precise geolocation data</li>
+						<li>Complete account credentials (account log-in and password)</li>
+						<li>Other sensitive data you chose to provide (even if we do not specifically collect it)</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Our business purposes for collecting and disclosing your personal information are the business purposes in the above section called, "<em>How We Use Personal Information About You.</em>" For more information on the categories of third parties to whom we disclosed personal information, see the above section called, "<em>How We Share Personal Information About You</em>".</p>
+			<p>We have not sold personal information or shared personal information for cross-context behavioral advertising (or targeted advertising) in the last 12 months.</p>
+			<h3>Children’s Privacy</h3>
+			<p>We do not collect any personal information directly from children under 16 years of age. As a parent or guardian, you may provide or make available personal information of your children to us, and, by doing so, you agree and consent to our collection and use of your children’s personal information.</p>
+			<p>If you are a child under the age of 16, please do not attempt to use our website or online materials or send us any personal information. If we learn we have collected personal information directly from a child under 16 years of age, we will delete that data as quickly as possible.</p>
+			<p class="marginAdj">We collect the following personal information about children from their parent or guardian:</p>
+			<ul>
+				<li>Contact information, such as name, postal address, email address, and phone number</li>
+				<li>Characteristics, such as age, date of birth, and gender</li>
+			</ul>
+			<p>We do not enable children or parents or guardians to make children’s personal information publicly available.</p>
+			<p class="marginAdj">The main reason we collect children’s personal information is to provide services related to the collected information. We may use children’s information to do things like:</p>
+			<ul>
+				<li>Guide our development of products and services, including related to children</li>
+				<li>Conduct aggregate (meaning data is not associated with an individual child) analyses of users of our services</li>
+				<li>Comply with and enforce legal and regulatory obligations, respond to requests from law enforcement and other government authorities, or otherwise protect the rights, safety, or property of HM, our customers, and others</li>
+			</ul>
+			<p>We use vendors and service providers to store children’s personal information. They are required to keep children’s personal information we provide to them confidential and to use it only to provide the services we request.</p>
+			<p>We may also share children’s personal information with third parties, including the government, for legal processes, or to protect life and safety where we believe that access, use, preservation, or disclosure of the information is reasonably necessary.</p>
+			<p><em>Your Rights as a Parent or Guardian</em></p>
+			<p class="marginAdj">Parents and guardians have rights when it comes to their children’s information:</p>
+			<ul>
+				<li>To change their mind and withdraw consent to the collection of their child(ren)’s personal information</li>
+				<li>To see the personal information we collect about their child(ren)</li>
+				<li>To ask us to delete personal information we have collected about their child(ren)</li>
+			</ul>
+			<p class="marginAdj">You can exercise any of your rights as a parent or guardian or make any other inquiry about your child(ren)’s privacy by contacting the operator of our website by:</p>
+			<ul>
+				<li>Emailing us at customerservice@healthmonitor.com; or</li>
+				<li>Calling us at (800) 422-4112</li>
+			</ul>
+			<p>We may need to collect some information from you to confirm you are the parent or guardian.</p>
+			<h3>Our Use of Cookies and Other Tracking Technology</h3>
+			<p>Our website uses cookies and similar technologies such as pixel tags, web beacons, clear GIFs and JavaScript (collectively, "<strong>cookies</strong>"). Cookies are small pieces of data– usually text files – placed on your computer, tablet, phone or similar device when you use that device to access our website.  We use cookies to gather data about visitors to our website and online materials, analyze trends, and operate and improve our website and services. For example, cookies allow our website to remember your username and password to save you having to retype it every time you visit our website. We may also supplement the information we collect from you with information received from third parties, including third parties that have placed their own cookies on your devices.</p>
+			<h3>Monitoring and Recording Keystrokes and Other Communication</h3>
+			<p>We use cookies and other tracking technology to monitor and record keystrokes, activities, and communications made through our website and online materials.  You consent to us and third parties monitoring and recording all of your keystrokes, activities, and communications made through our website and online materials and to us using and sharing such keystrokes, activities, and communications for all purposes described in this Privacy Notice.</p>
+			<h3>Do Not Track</h3>
+			<p>"Do Not Track" is a privacy preference that users can set in their web browsers. When a user turns on the Do Not Track signal, the browser sends a message to websites requesting them not to track the user. Our website is not currently configured to respond to Do Not Track signals or other mechanisms that provide users the ability to exercise choice regarding the collection of personal information about a user’s online activities over time and across third-party websites or online services.</p>
+			<h3>Disable or Delete Cookies and Tracking Technology; Third-Party Cookies</h3>
+			<h4><em>Disable or Delete Cookies from Your Browser or Device</em></h4>
+			<p>You can decide whether or not to accept certain cookies through your internet browser’s settings. Most browsers have an option for turning off the cookie feature, which will prevent your browser from accepting new cookies, as well as (depending on the sophistication of your browser software) allow you to decide on acceptance of each new cookie in a variety of ways. To explore what cookie settings are available to you, look in the "preferences" or "options" section of your browser's menu.</p>
+			<p>You can also delete all cookies that are already on your device. If you do this, however, you may have to manually adjust some preferences every time you visit our website and some of the website and functionalities may not work.</p>
+			<h4><em>Third-Party Cookies and Resources to Opt-Out of Cookies and Targeted Advertising</em></h4>
+			<p>We allow third parties to set and collect cookies through our website and online materials. Please review such third parties’ privacy policies and other terms for information on their privacy practices and uses of personal information, including whether they use cookies to provide targeted and cross-context behavioral advertising and your options to opt-out.</p>
+			<p class="marginAdj">We use the following third-party cookies (among others):</p>
+			<ul>
+				<li><strong>Google</strong>, including Google Analytics
+					<ul>
+						<li>Please see Google’s policies here: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow">https://policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer nofollow">https://policies.google.com/technologies/ads</a></li>
+						<li>If you do not wish for Google Analytics to gather information about how you interact with our website and online content, please install the Google Analytics Opt-out Browser Add-on available here: <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer nofollow">https://tools.google.com/dlpage/gaoptout</a> and employ it at the start of each session on our website. A cookie will be set on your browser that instructs this technology not to start for that session. Please note that the next time you access our website the analytics will be reactivated, so you will have to disable the technology each time.</li>
+						<li>You have the option to manage Google's personalized ads by visiting the Google advertising center at <a href="https://myadcenter.google.com/?ref=privacy-policy" rel="noopener noreferrer nofollow">https://myadcenter.google.com/?ref=privacy-policy</a>.</li>
+					</ul>
+				</li>
+			</ul>
+			<p>To make choices about targeted advertisements from participating third parties, including to opt-out of receiving targeted advertisements from participating third parties, please visit the Network Advertising Initiative at <a href="http://www.networkadvertising.org/choices/" rel="noopener noreferrer nofollow">http://www.networkadvertising.org/choices/</a>  or the Digital Advertising Alliance at <a href="https://www.aboutads.info/choices" rel="noopener noreferrer nofollow">www.aboutads.info/choices</a>.</p>
+			<p>To find out more information about cookies, including information about how to manage and delete cookies, please visit <a href="http://www.allaboutcookies.org/" rel="noopener noreferrer nofollow">http://www.allaboutcookies.org/</a>.</p>
+			<h3>International Transfer, Storage and Processing</h3>
+			<p>We operate from the United States and the personal information we collect or receive is stored and processed in the United States and may be processed in other countries around the world subject to the provisions of this Privacy Notice,</p>
+			<p>If you are located in the European Economic Area or other regions with laws governing data collection and use that may differ from United States law, please note that we may transfer data, including personal information, to a country and jurisdiction that does not have the same data protection laws as your jurisdiction and may afford materially less privacy protections for your personal information than your jurisdiction. You consent to the transfer of personal information to the United States or any other country in which we, our affiliates or vendors maintain facilities. You consent to the use and sharing of information about you as described in this Privacy Notice.</p>
+			<h3>Changes to Our Privacy Notice</h3>
+			<p>We reserve the right to amend this Privacy Notice at our discretion and at any time. When we do, we will post the revised notice on our website with a new "Last Updated" date. We may, but are not required to, also provide you with notice of the amended Privacy Notice via any others means we consider reasonable, including, without limitation, email. Your continued use of our website or online materials or your provision of personal information to us following the posting of changes (or other notice we provide in our sole discretion) constitutes your acceptance of such changes and the Privacy Notice as amended. We may, but are not required to, also provide you with alternative means of accepting any changes to or amended version of this Privacy Notice. We encourage you to visit this page regularly for any changes.</p>
+			<h3>Contact Information</h3>
+			<p>The operator of our website is: Health Monitor Network.</p>
+			<p>You may contact us with questions or concerns about this Privacy Notice and our privacy policy and practices:</p>
+			<p><strong>Email:</strong> customerservice@healthmonitor.com</p>
+			<p><strong>Phone:</strong> (800) 422-4112</p>
+			<p><strong>Postal Address:</strong><br>Health Monitor Network<br>11 Philips Parkway<br>Montvale, NJ 07046</p>
+			<p>If you are unable to review or access this Privacy Notice due to a disability, please email us at customerservice@healthmonitor.com or call us at (800) 422-4112 so we can share it in another format.</p>
+		</div>
+	</div><!-- #privacyPolicyModal -->
+	
+	<!-- Terms and Conditions Modal -->
 	<div id="myModal" class="modal">
 	
 	  <!-- Modal content -->
@@ -286,18 +510,28 @@
 	</div>
 	<script type="text/javascript" src="https://web-player.art19.com/assets/current.js"></script>
 	<script>
-		var modal = document.getElementById("myModal");
-		var btn = document.getElementById("myBtn");
-		var mbtn = document.getElementById("myBtnmobile");
-		var span = document.getElementsByClassName("close")[0];
-		btn.onclick = function() {
-	  	modal.style.display = "block";
-		}
-		mbtn.onclick = function() { modal.style.display = "block"; }
-		span.onclick = function() { modal.style.display = "none"; }
-		window.onclick = function(event) {
-	  	if (event.target == modal) { modal.style.display = "none"; }
-		}
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var mbtn = document.getElementById("myBtnmobile");
+	var span = document.getElementsByClassName("close")[0];
+	btn.onclick = function() { modal.style.display = "block"; }
+	mbtn.onclick = function() { modal.style.display = "block"; }
+	span.onclick = function() { modal.style.display = "none"; }
+	window.onclick = function(event) {
+	  if (event.target == modal) { modal.style.display = "none"; }
+	}
+	
+	
+	var ppmodal = document.getElementById("privacyPolidyModal");
+	var ppbtn = document.getElementById("privacyPolicyD");
+	var ppmbtn = document.getElementById("privacyPolicyM");
+	var ppspan = document.getElementsByClassName("ppclose")[0];
+	ppbtn.onclick = function() { ppmodal.style.display = "block";}
+	ppmbtn.onclick = function() { ppmodal.style.display = "block"; }
+	ppspan.onclick = function() { ppmodal.style.display = "none"; }
+	window.onclick = function(event) {
+	  if (event.target == ppmodal) { ppmodal.style.display = "none"; }
+	}
 	</script>
   </body>
 </html>
