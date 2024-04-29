@@ -45,8 +45,9 @@
 		#root, #__next { isolation: isolate; }
 		html, body { background-color: #FFF; }
 		.rd_wrapper { display:grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 100vh; position: relative; }
-		.rd_left_wrapper { display: flex; justify-content: flex-end; padding: 2rem 3rem 2rem 3rem; align-items: flex-start; }
-		.rd_left_content { max-width: 35.375rem; }
+		.rd_left_wrapper { display: flex; justify-content: flex-end; padding: 2rem 3rem 2rem 3rem; align-items: stretch; }
+		.rd_left_content { max-width: 35.375rem; display: flex; flex-direction: column; justify-content: space-between; flex-wrap: nowrap; align-items: stretch; }
+		.rd_left_bottom { display: flex; align-items: flex-end; }
 		.rdleft_header { display:flex; justify-content: space-between; margin-bottom: -1rem; }
 		.rdlh_logo p { text-align: center; margin:1rem 0 0; }
 		.hmlogo { width: 100%; max-width: 15.4375rem; }
@@ -63,7 +64,7 @@
 		h3 { font-size: clamp(3rem, 1.8443rem + 3.522vw, 4.75rem); letter-spacing: -2px; line-height: 1.1; font-weight: 400; color: #2F383C; margin-top: 1rem; margin-bottom: 2rem; }
 		.modal-content h3 { font-size: clamp(1.5rem, 1.0047rem + 1.5094vw, 2.25rem); margin-bottom: 0.8725rem; letter-spacing: 0; }
 		p { font-family: 'DM Sans', sans-serif; margin-bottom: 1.5rem; color: #2F383C; font-size: 1rem; line-height: 1.25; }
-		p.copyright { margin-top: 3rem; font-size: 0.8rem; }
+		p.copyright { margin-top: 2rem; font-size: 0.8rem; margin-bottom: 0; }
 			p.copyright a { color: #2B383C; text-decoration: underline; } 
 		
 		.rd_right_content { position: relative; }
@@ -86,38 +87,45 @@
 		.rdr_wrapper { display: flex; flex-direction: column; height: 100%; justify-content: flex-end; padding: 3rem 2rem 3rem 5vw; align-items: flex-end; }
 			.rdr_wrapper p { color: #FFF; font-weight: 700;  }
 		.platform_container { display: flex; gap: 1rem; flex-direction: column; }
-		.platform_link img { width: 100%; max-width: 5.625rem; filter: saturate(0); transition: all 0.3s ease; aspect-ratio: 1; height: auto; }
+		.platform_link img { width: 100%; max-width: 4.25rem; filter: drop-shadow(0px 0px 50px rgb(47 56 60 / 0.25)); transition: all 0.3s ease; aspect-ratio: 1; height: auto; }
 			.platform_link:hover img,
-			.platform_link:focus img { filter: saturate(1); }
+			.platform_link:focus img { filter: drop-shadow(0px 0px 50px rgb(47 56 60 / 0.25)) saturate(0); }
 		.kisqali { max-width: 20rem; height: auto; margin-top: 2rem; }	
+		.wyltp_wrapper { display:flex; align-items: center; gap: 10%; }
+		.wyltp_wrapper p { font-size: 14px; margin-bottom: 0; padding-bottom: 0; }
+		.wyltp_icons { display:flex; gap: 1.5rem; }
+		.ad_desktop { position: absolute; z-index: 2; left: 2rem; bottom: 2rem; }
+		
+		
 		.mobile-top { background-color: #FFF; padding: 1.25rem 1rem 1rem; }
 			.mobile-top p { margin: 0.5rem 0 0; padding-bottom:0; text-align: center; }
-		.mcontent-top { position: relative; }
-		.mcontent-bottom { padding-bottom:3.5rem; }
-		.mcontent-bottom p { color: #FFF; }
-		.mcontent_wrapper { margin-left:1.25rem; margin-right:1.25rem; z-index: 1; position: relative; }
+		.mcontent-top { position: relative; background-color:#1A221E; aspect-ratio: 375 / 456; }
+		.mcontent-bottom { padding-bottom:5.5rem; }
+		.mcontent-bottom p { line-height: 1.5; }
+		.mcontent_wrapper { margin-left:1.25rem; margin-right:1.25rem; z-index: 1; position: relative; padding-top: 1.5rem; }
 		#desktop { display:block; }
 		#mobile,
 		#banner_mobile { display:none; }
-		#myBtnmobile, #privacyPolicyM { color: #FFF; text-decoration: underline; }
+		#myBtnmobile, #privacyPolicyM { text-decoration: underline; }
 			#myBtnmobile:hover,
 			#privacyPolicyM:hover,
 			#myBtnmobile:focus,
 			#privacyPolicyM:focus { text-decoration: none; }
 		@media (max-width:576px) {
-			html, body { background-color:#1A221E; }
 			#desktop { display:none; }
 			#mobile { display:block; }
 			#banner_mobile { display: block; position: fixed; bottom: 0; background-color: #FFF; width: 100%; z-index: 5; }
 			.hmlogo { max-width: 12rem; margin: auto; }
 			.burst { width: 24vw; left: auto; right: -0.5rem; top: 1.25rem; height: 24vw; }
 			.rd_right_s2_mobilebg { aspect-ratio: 750 / 998; }
-			h1 { color: #FFF; margin-top: 0; padding-top: 5rem; }
+			h1 { color: #FFF; margin-top: 0; padding-top: 12vw; }
 			h4 { color: #FFF;  }
 			.rdr_wrapper { padding: 1rem 0 2rem; align-items: center; }
 			.platform_container { gap: 0.875rem; flex-direction: row; }
+			.wyltp_wrapper { display: block; }
+			.wyltp_wrapper p { margin-bottom: revert; }
 			.copyright { font-size: 0.875rem; }
-			.copyright a { color: #FFF; text-decoration: underline; }
+			.copyright a { text-decoration: underline; }
 			.kisqali { margin: 0.25rem auto; }
 		}
 		
@@ -139,20 +147,35 @@
 				<img src="burst.svg" alt="New Podcast Announcement" width="150" height="150" class="burst" />
 				<div class="rd_left_wrapper">
 					<div class="rd_left_content">
-						<div class="rdleft_header">
-							<div class="rdlh_logo">
-								<img src="health-monitor-logo.svg" width="300" height="44" alt="Health Monitor logo" class="hmlogo" />
+						<div class="rd_left_top">
+							<div class="rdleft_header">
+								<div class="rdlh_logo">
+									<img src="health-monitor-logo.svg" width="300" height="44" alt="Health Monitor logo" class="hmlogo" />
+								</div>
 							</div>
+							<h1>Recently Diagnosed?</h1>
+							<h2>What to Expect</h2>
+							<h4><b>HR+/HER2-</b><br>Metastatic Breast Cancer</h4>
+							<p>If you've recently been diagnosed with HR+/HER2- metastatic breast cancer, you're probably feeling a bit overwhelmed. Take a deep breath, and tune into our free podcast.</p>
+							<p>Over five episodes, you'll hear top experts offer the insight and encouragement you need to navigate the journey ahead with confidence.</p>
+							<div class="art19-web-player awp-micro awp-theme-dark-custom" data-series-id="0dedacf7-3e54-48ef-83a9-08f58d698b9d" data-pick-from-series="latest" data-primary-color="#F9AAA5"></div>
+							
+							
+							
+							<div class="wyltp_wrapper">
+								<p>Wherever you listen to Podcasts</p>
+								<div class="wyltp_icons">
+									<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow" title="Listen on Apple Podcasts"><img src="apple.svg" alt="Apple Podcasts" width="150" height="150" /></a>
+									<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow" title="Listen on Spotify Podcasts"><img src="spotify.svg" alt="Spotify Podcasts" width="150" height="150" /></a>
+									<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow" title="Listen on Amazon Podcasts"><img src="amazon.svg" width="150" height="150" alt="Amazon Podcasts" /></a>
+									<a href="https://www.iheart.com/podcast/269-recently-diagnosed-what-to-108870471/" target="_blank" id="iheart" class="platform_link" rel="noopener nofollow" title="Listen on iHeartMedia Podcasts"><img src="iheartradio.svg" alt="Stitcher Podcasts" width="150" height="150" /></a>
+								</div>
+							</div>
+							
+						</div>			
+						<div class="rd_left_bottom">
+							<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> | <a href="#" id="privacyPolicyD">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 						</div>
-						<h1>Recently Diagnosed?</h1>
-						<h2>What to Expect</h2>
-						<h4><b>HR+/HER2-</b><br>Metastatic<br>Breast Cancer</h4>
-						<p>You have questions&mdash;and they're probably not all getting answered during a regular office visit.</p>
-						<p>That's why we've enlisted top experts to provide insight, encouragement, and everyday wisdom in our FREE five-episode podcast, helping you make informed decisions, big and small.</p>
-						<div class="art19-web-player awp-micro awp-theme-light-gray-blue" data-series-id="0dedacf7-3e54-48ef-83a9-08f58d698b9d" data-pick-from-series="latest"></div>
-						<div><a href="https://us.kisqali.com/metastatic-breast-cancer/patient-support/sign-up" target="_blank" rel="noopener nofollow" title="Sign Up For Novartis Patient Support"><img src="banner.webp" alt="Sign Up For Novartis Patient Support" width="640" height="100" loading="lazy" class="kisqali" /></a></div>		
-
-						<p class="copyright"><a href="#" id="myBtn">Terms &amp; Conditions</a> | <a href="#" id="privacyPolicyD">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 					</div>
 				</div>
 				<div class="rd_right_content">
@@ -164,14 +187,7 @@
 						<div class="carousel-image"><img src="rdp-bg5.webp" alt="Patient5" width="1416" height="1536" loading="lazy" /></div>
 						<div class="carousel-image"><img src="rdp-bg6.webp" alt="Patient6" width="1416" height="1536" loading="lazy" /></div>
 					</div>
-					<div class="rdr_wrapper">
-						<div class="platform_container">
-							<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow"><img src="apple.svg" alt="Apple Podcasts" width="150" height="150" /></a>
-							<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow"><img src="spotify.svg" alt="Spotify Podcasts" width="150" height="150" /></a>
-							<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="amazon.svg" width="150" height="150" alt="Amazon Podcasts" /></a>
-							<a href="https://www.iheart.com/podcast/269-recently-diagnosed-what-to-108870471/" target="_blank" id="iheart" class="platform_link" rel="noopener nofollow"><img src="iheartradio.svg" alt="Stitcher Podcasts" width="150" height="150" /></a>
-						</div>
-					</div>
+					<div class="ad_desktop"><a href="https://us.kisqali.com/metastatic-breast-cancer/patient-support/sign-up" target="_blank" rel="noopener nofollow" title="Sign Up For Novartis Patient Support"><img src="banner.webp" alt="Sign Up For Novartis Patient Support" width="640" height="100" loading="lazy" class="kisqali" /></a></div>
 				</div>
 			</div>
 		</section>
@@ -193,21 +209,24 @@
 					<h1>Recently Diagnosed?</h1>
 					<h2>What to<br>Expect</h2>
 					<h4><b>HR+/HER2-</b><br>Metastatic<br>Breast Cancer</h4>
-					<div class="rdr_wrapper">
-						<div class="platform_container">
-							<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow"><img src="apple.svg" width="150" height="150" alt="Apple Podcasts" /></a>
-							<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow"><img src="spotify.svg" alt="Spotify Podcasts" width="150" height="150" /></a>
-							<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow"><img src="amazon.svg" alt="Amazon Podcasts" width="150" height="150" /></a>
-							<a href="https://www.iheart.com/podcast/269-recently-diagnosed-what-to-108870471/" target="_blank" class="platform_link" rel="noopener nofollow"><img src="iheartradio.svg" alt="Stitcher Podcasts" width="150" height="150" /></a>
-						</div>
-					</div>
 				</div>
 			</div>
 			<div class="mcontent-bottom">
 				<div class="mcontent_wrapper">
-					<p>You have questions&mdash;and they're probably not all getting answered during a regular office visit.</p>
-					<p>That's why we've enlisted top experts to provide insight, encouragement, and everyday wisdom in our FREE five-episode podcast, helping you make informed decisions, big and small.</p>
-					<div class="art19-web-player awp-micro awp-theme-light-gray-blue" data-series-id="0dedacf7-3e54-48ef-83a9-08f58d698b9d" data-pick-from-series="latest"></div>
+					<p>If you've recently been diagnosed with HR+/HER2- metastatic breast cancer, you're probably feeling a bit overwhelmed. Take a deep breath, and tune into our free podcast.</p>
+					<p>Over five episodes, you'll hear top experts offer the insight and encouragement you need to navigate the journey ahead with confidence.</p>
+					<div class="art19-web-player awp-micro awp-theme-dark-custom" data-series-id="0dedacf7-3e54-48ef-83a9-08f58d698b9d" data-pick-from-series="latest" data-primary-color="#F9AAA5"></div>
+					
+					<div class="wyltp_wrapper">
+						<p>Wherever you listen to Podcasts</p>
+						<div class="wyltp_icons">
+							<a href="https://podcasts.apple.com/us/podcast/recently-diagnosed-what-to-expect-with-health-monitor/id1671674862" target="_blank" class="platform_link" rel="noopener nofollow" title="Listen on Apple Podcasts"><img src="apple.svg" alt="Apple Podcasts" width="150" height="150" /></a>
+							<a href="https://open.spotify.com/show/3vRi56hnbydzxv5TbgdbWU?si=ebcc92ea3756427c&nd=1" target="_blank" class="platform_link" rel="noopener nofollow" title="Listen on Spotify Podcasts"><img src="spotify.svg" alt="Spotify Podcasts" width="150" height="150" /></a>
+							<a href="https://music.amazon.com/podcasts/452df8fe-41ad-491d-b3b7-f9dae790bfca/recently-diagnosed-what-to-expect-with-health-monitor" target="_blank" class="platform_link" rel="noopener nofollow" title="Listen on Amazon Podcasts"><img src="amazon.svg" width="150" height="150" alt="Amazon Podcasts" /></a>
+							<a href="https://www.iheart.com/podcast/269-recently-diagnosed-what-to-108870471/" target="_blank" id="iheart" class="platform_link" rel="noopener nofollow" title="Listen on iHeartMedia Podcasts"><img src="iheartradio.svg" alt="Stitcher Podcasts" width="150" height="150" /></a>
+						</div>
+					</div>
+					
 					<p class="copyright"><a href="#" id="myBtnmobile">Terms &amp; Conditions</a> | <a href="#" id="privacyPolicyM">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear())</script> Health Monitor Network. All Rights Reserved.</p>
 				</div>
 			</div>
