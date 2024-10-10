@@ -94,8 +94,7 @@
 		.wyltp_wrapper { display:flex; align-items: center; gap: 10%; }
 		.wyltp_wrapper p { font-size: 14px; margin-bottom: 0; padding-bottom: 0; text-wrap: balance; }
 		.wyltp_icons { display:flex; gap: 1.5rem; }
-		.ad_desktop { position: absolute; z-index: 2; left: calc(50% + 1.5rem); bottom: 1rem; }
-		#scrolling { position: relative; }
+		.ad_desktop { position: absolute; z-index: 2; left: auto; right: calc( 50% - 340px); top: calc(100dvh - 70px); }
 
 		.mobile-top { background-color: #FFF; padding: 1.25rem 1rem 1rem; }
 			.mobile-top p { margin: 0.5rem 0 0; padding-bottom:0; text-align: center; }
@@ -141,7 +140,8 @@
 	</style>
   </head>
   <body>
-	<main class="main-container">
+	<!-- <main class="main-container"> -->
+	<main>
 		<section id="desktop">
 			<div class="rd_wrapper">
 				<img src="burst.svg" alt="New Podcast Announcement" width="150" height="150" class="burst" />
@@ -188,10 +188,28 @@
 						<div class="carousel-image"><img src="rdp-bg5.webp" alt="Patient5" width="1416" height="1536" loading="lazy" /></div>
 						<div class="carousel-image"><img src="rdp-bg6.webp" alt="Patient6" width="1416" height="1536" loading="lazy" /></div>
 					</div>
+
+
+
 				</div>
 			</div>
 		</section>
-
+		<div class="ad_desktop">
+			<ins class='dcmads' style='display:inline-block;width:320px;height:50px'
+				data-dcm-placement='N7437.1264340HEALTHMONITORNETWOR/B30919543.392687320'
+				data-dcm-rendering-mode='iframe'
+				data-dcm-https-only
+				data-dcm-api-frameworks='[APIFRAMEWORKS]'
+				data-dcm-omid-partner='[OMIDPARTNER]'
+				data-dcm-gdpr-applies='gdpr=${GDPR}'
+				data-dcm-gdpr-consent='gdpr_consent=${GDPR_CONSENT_755}'
+				data-dcm-addtl-consent='addtl_consent=${ADDTL_CONSENT}'
+				data-dcm-ltd='false'
+				data-dcm-resettable-device-id=''
+				data-dcm-app-id=''>
+			  <script src='https://www.googletagservices.com/dcm/dcmads.js'></script>
+			</ins>
+		</div>
 		<section id="mobile">
 			<div class="mobile-top">
 				<img src="health-monitor-logo.svg" alt="Health Monitor logo" width="300" height="44" class="hmlogo" />
@@ -561,18 +579,18 @@
 	window.onclick = function(event) {
 	  if (event.target == ppmodal) { ppmodal.style.display = "none"; }
 	}
-	window.addEventListener('scroll', () => {
-	  const container = document.querySelector('.main-container');
-	  if (window.innerWidth > 576) {
-		if (window.scrollY === 0) {
-		  container.removeAttribute('id');
-		} else {
-		  container.id = 'scrolling';
-		}
-	  } else {
-		container.removeAttribute('id');
-	  }
-	});
+	// window.addEventListener('scroll', () => {
+	//   const container = document.querySelector('.main-container');
+	//   if (window.innerWidth > 576) {
+	// 	if (window.scrollY === 0) {
+	// 	  container.removeAttribute('id');
+	// 	} else {
+	// 	  container.id = 'scrolling';
+	// 	}
+	//   } else {
+	// 	container.removeAttribute('id'); // Ensure it's removed for smaller screens
+	//   }
+	// });
 
 	</script>
   </body>
